@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travelling Booking Website</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/home">Home</a></li>
+                <li><a href="/destination">Destinations</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+                <li><a href="/about">About Us</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <section>
+            <h1><u>Serene Travels: Your Gateway to Unforgettable Journeys</u></h1>
+            <p>Embark on extraordinary adventures with Serene Travels, your trusted partner in crafting unforgettable
+                travel experiences. We specialize in curating personalized itineraries that cater to your unique
+                desires, whether you seek sun-drenched beaches, cultural immersion, or thrilling expeditions. Our team
+                of travel experts meticulously plans every detail, from flights and accommodation to local experiences
+                and hidden gems, ensuring a seamless and enriching journey. With Serene Travels, every trip is a
+                testament to our commitment to providing exceptional service and creating memories that will last a
+                lifetime.</p>
+        </section>
+
+        <section>
+            <h2>Top Destinations</h2>
+            <ul>
+                <li>
+                    <article>
+                        <h3>Port Blair, Andamans</h3>
+                        <img src="/Assets/andamans.jpg" alt="Andaman and Nicobar Island" width="300" height="150">
+                        <p>
+                            Discover the enchanting Andaman Islands! This package offers a thrilling blend of pristine
+                            beaches, vibrant coral reefs, and historical sites like the Cellular Jail. Explore the
+                            underwater world with snorkeling and indulge in delicious seafood.
+                        </p>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h3>Alleppey, Kerala</h3>
+                        <img src="/Assets/allepy.jpg" alt="Andaman and Nicobar Island"  width="300" height="150">
+                        <p>
+                            Experience the serenity of Kerala's backwaters! This package includes a relaxing stay on a
+                            traditional houseboat, exploring the picturesque canals, enjoying Ayurvedic treatments, and
+                            savoring delicious Keralan cuisine.
+                        </p>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h3>Jodhpur, Rajasthan</h3>
+                        <img src="/Assets/jodhpur.jpeg" alt="Andaman and Nicobar Island"  width="300" height="150">
+                        <p>
+                            Immerse yourself in the "Blue City" of Rajasthan! This package takes you through majestic
+                            forts
+                            like Mehrangarh, explores vibrant bazaars, and offers a glimpse into the rich cultural
+                            heritage
+                            of Jodhpur.
+                        </p>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h3>Srinagar, Kashmir</h3>
+                        <img src="/Assets/srinagar.jpg" alt="Andaman and Nicobar Island"  width="300" height="150">
+                        <p>
+                            Escape to the paradise on Earth! This package offers a captivating journey through the
+                            breathtaking landscapes of Kashmir. Explore the Dal Lake in a Shikara, visit the Mughal
+                            Gardens,
+                            and experience the warmth of local hospitality.
+                        </p>
+                    </article>
+                </li>
+
+            </ul>
+        </section>
+
+        <section>
+            <h3>Travel Package</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Package Name</th>
+                        <th>Destination</th>
+                        <th>Price</th>
+                        <th>Duration</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Andaman Island Explorer</td>
+                        <td>Port Blair, Andamans</td>
+                        <td>&#8377;95000</td>
+                        <td>6 nights, 7 days</td>
+                    </tr>
+                    <tr>
+                        <td>Blue City Odyssey</td>
+                        <td>Jodhpur, Rajasthan</td>
+                        <td>&#8377;65,000</td>
+                        <td>4 nights, 5 days</td>
+                    </tr>
+                    <tr>
+                        <td>Backwater Bliss</td>
+                        <td>Alleppey, Kerala</td>
+                        <td>&#8377;55,000</td>
+                        <td>4 nights, 5 days</td>
+                    </tr>
+                    <tr>
+                        <td>Kashmir Enchantment</td>
+                        <td>Srinagar, Kashmir</td>
+                        <td>&#8377;85000</td>
+                        <td>4 nights, 5 days</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <br>
+        <hr><br>
+        <section>
+            <h3>Travel Booking Form:</h3>
+            <form action="">
+                <label for="name">Name: </label>
+                <input type="text" placeholder="Enter Name" name="name">
+                <br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" placeholder="Enter email" name="email">
+                <br><br>
+
+                <label for="destination">Destination</label>
+                <select name="destination">
+                    <option value="">--Please choose an option--</option>
+                    <option value="Port Blair">Port Blair, Andamans</option>
+                    <option value="Jodhpur">Jodhpur, Rajasthan</option>
+                    <option value="Alleppey">Alleppey, Kerala</option>
+                    <option value="srinagar">Srinagar, Kashmir</option>
+                </select>
+                <br><br>
+
+                <label for="travelClass">Travel Class</label>
+                <input type="radio" name="travelClass" value="economy" id="economy" />
+                <label for="economy">Economy</label>
+                <input type="radio" name="travelClass" value="business" id="business" />
+                <label for="business">Business</label>
+                <input type="radio" name="travelClass" value="firstClass" id="firstClass" />
+                <label for="firstClass">First Class</label>
+                <br><br>
+
+                <label for="add-ons">Add-ons</label>
+                <input type="checkbox" name="addOn" id="insurance">
+                <label for="insurance">Insurance</label>
+                <input type="checkbox" name="addOn" id="meal-plan">
+                <label for="meal-plan">Meal Plan</label>
+                <input type="checkbox" name="addOn" id="airport-pickup">
+                <label for="airport-pickup">Airport Pickup</label>
+
+                <br><br>
+                <input type="submit">
+            </form>
+        </section>
+
+        <footer>
+            <h3>Contact us: </h3>
+            <h5>
+                Call us at 9888222447
+                <br>
+                Write to us at info@serene.in
+            </h5>
+            <!-- <br> -->
+            <a href="/">
+                <img src="/Assets/insta.jpeg" alt="" height="30" width="30">
+                @serene_travels
+            </a>
+            <br>
+
+            <a href="/">
+                <img src="/Assets/youtube.png" alt="" height="30" width="30">
+                Serene Travels
+            </a>
+        </footer>
+    </main>
+</body>
+
+</html>
